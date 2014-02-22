@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cadastro de Bares</title>
+	</head>
+	<body>
+		<h1>Cadastre o seu bar aqui!</h1>
+		<form action="{{ url_for('cadastro') }}" method="POST">
+			<table>
+				<tr>
+					<td>Nome do Bar</td>
+					<td><input type="text" name="nome_do_bar"></input></td>
+				</tr>
+				<tr>
+					<td>Endereço</td>
+					<td><input type="text" name="endereco"></input></td>
+				</tr>
+				<tr>
+					<td>Horário de Funcionamento</td>
+					<td><input type="text" name="horario_de_funcionamento"></input></td>
+				</tr>
+				<tr>
+					<td>Especialidade da Casa</td>
+					<td><input type="text" name="especialidade_da_casa"></input></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" value="Cadastrar">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
